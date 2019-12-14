@@ -32,7 +32,7 @@ function FileUploadButton() {
     return (
         <ButtonToolbar>
           <Spring
-              config = {{delay: 500, tension: 100}}
+              config = {{delay: 0, tension: 50}}
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}>
               {props => 
