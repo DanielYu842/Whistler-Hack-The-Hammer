@@ -7,7 +7,7 @@ function FileModal(props) {
     return (
         <Modal
         {...props}
-        size="lg"
+        size="sm"
         aria-labelledby="contained-modal-title-vcenter"
         centered
         >
@@ -17,11 +17,15 @@ function FileModal(props) {
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
+          <form id="frmUploader" enctype="multipart/form-data" action="api/Upload/" method="post">
+            <input type="file" name="imgUploader"/>
+            <input type="submit" name="submit" id="btnSubmit" value="Upload" /> 
+          </form>
         </Modal.Body>
+        {/*
         <Modal.Footer>
-            <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
+            <Button onClick={props.onHide}>Upload</Button>
+        </Modal.Footer>*/}
         </Modal>
     );
 }
