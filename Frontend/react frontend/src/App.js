@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Feed from './Pages/Feed.js';
-import Login from './Pages/Login.js';
+import Feed from './Pages/js/Feed.js'
+import Login from './Pages/js/Login.js';
 
 
 
