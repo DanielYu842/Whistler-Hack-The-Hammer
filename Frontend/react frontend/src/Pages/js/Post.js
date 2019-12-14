@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/Post.css'
+import Card from './Post Animation'
+
 
 class Post extends React.Component {
     constructor(){
@@ -11,14 +12,7 @@ class Post extends React.Component {
 
     render(){
         return(
-            <div className="post-div">
-                <div className="post-title-div">
-                    {this.props.title}
-                </div>
-                <div className="post-file-div">
-                    filename
-                </div>
-            </div>
+            <Card title={this.props.title}></Card>
         )
     }
 }

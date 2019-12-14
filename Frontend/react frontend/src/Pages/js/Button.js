@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Button.css'
-import {Modal, Button, ButtonToolbar, setModalShow, modalShow} from 'react-bootstrap'
+import {Modal, Button, ButtonToolbar} from 'react-bootstrap'
+import { Spring } from 'react-spring/renderprops'
 
 function FileModal(props) {
     return (
@@ -31,13 +32,21 @@ function FileUploadButton() {
     return (
         <ButtonToolbar>
 
+                    <Spring
+                        config = {{delay: 500, tension: 30}}
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}>
+                        {props => 
+                        <div style={props}>
+                            <div className="button-div" onClick={() => setModalShow(true)}>
+                                <container>
+                                    <h1 className="uploadbutton">+</h1>
+                                </container>
+                            </div>
+                        </div>
+                        }
+                    </Spring>  
 
-        <div className="button-div" onClick={() => setModalShow(true)}>
-            <container>
-                <h1 className="uploadbutton">+</h1>
-            </container>
-
-        </div>
 
 
         <FileModal

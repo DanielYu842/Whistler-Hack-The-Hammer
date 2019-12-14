@@ -18,6 +18,8 @@ class Feed extends React.Component {
                     <Post title="this is a post "></Post>
                     <Post title="this is a larger post this is a larger post this is a larger post"></Post>
                     <Post title="this is a post "></Post>
+                    <Post title="this is a post "></Post>
+
 
                     <Post title="this is a post "></Post>
                     <Post title="this is a larger post this is a larger post this is a larger post"></Post>
