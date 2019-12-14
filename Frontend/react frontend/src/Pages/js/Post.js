@@ -10,7 +10,10 @@ class Post extends React.Component {
         }
     }
 
+    
+
     render(){
+        console.log(this.props.index)
         return(
             <Card title={this.props.title}></Card>
         )

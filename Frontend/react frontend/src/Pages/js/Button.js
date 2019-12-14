@@ -31,24 +31,18 @@ function FileUploadButton() {
     
     return (
         <ButtonToolbar>
-
-                    <Spring
-                        config = {{delay: 500, tension: 30}}
-                        from={{ opacity: 0 }}
-                        to={{ opacity: 1 }}>
-                        {props => 
-                        <div style={props}>
-                            <div className="button-div" onClick={() => setModalShow(true)}>
-                                <container>
-                                    <h1 className="uploadbutton">+</h1>
-                                </container>
-                            </div>
-                        </div>
-                        }
-                    </Spring>  
-
-
-
+          <Spring
+              config = {{delay: 500, tension: 100}}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}>
+              {props => 
+              <div style={props}>
+                  <div className="button-div" onClick={() => setModalShow(true)}>
+                          <h1 className="uploadbutton">+</h1>
+                  </div>
+              </div>
+              }
+          </Spring>  
         <FileModal
             show={modalShow}
             onHide={() => setModalShow(false)}
