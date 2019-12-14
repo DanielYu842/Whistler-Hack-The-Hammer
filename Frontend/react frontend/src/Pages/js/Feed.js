@@ -11,7 +11,6 @@ class Feed extends React.Component {
     render(){
         return(
             <div>
-                this is the feed
             </div>
         )
     }
