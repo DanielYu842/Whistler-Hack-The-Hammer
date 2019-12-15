@@ -32,6 +32,7 @@
     background: lightblue;
     transition: all 0.4s ease 0s;
     cursor: pointer;
+    transform: rotate(360deg); /* Standard syntax */
 }
 /*
 .example_c {
