@@ -42,8 +42,9 @@ class Feed extends React.Component {
                     <div className="posts-div">
 
                         {JSON.map( (data, index) => {
+                            console.log(index)
                             return(
-                                <div>
+                                <div key={index}>
                                     <Spring
                                     config = {{delay: 500 + 100*index, tension: 100}}
                                     from={{ opacity: 0 }}

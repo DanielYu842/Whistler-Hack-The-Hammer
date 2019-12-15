@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Button.css'
-import {Modal, Button, ButtonToolbar} from 'react-bootstrap'
+import {Modal, ButtonToolbar} from 'react-bootstrap'
 import { Spring } from 'react-spring/renderprops'
 
 function FileModal(props) {
@@ -13,14 +13,11 @@ function FileModal(props) {
         >
         <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
-            Add File
+              <h1>Add File</h1>
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form id="frmUploader" enctype="multipart/form-data" action="api/Upload/" method="post">
-            <input type="file" name="imgUploader"/>
-            <input type="submit" name="submit" id="btnSubmit" value="Upload" /> 
-          </form>
+
         </Modal.Body>
         {/*
         <Modal.Footer>

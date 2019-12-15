@@ -5,8 +5,6 @@ import '../css/Post.css'
 
 
 
-
-
 const Card = (props) => {
   const [hover, setHover] = useState(false)
   const hoverState = useSpring({
@@ -32,7 +30,7 @@ const Card = (props) => {
     >
             <div className="post-div">
                 <div className="post-title-div">
-                    {props.title}
+                    {props.title}   
                 </div>
                 <div className="post-file-div">
                     filename
