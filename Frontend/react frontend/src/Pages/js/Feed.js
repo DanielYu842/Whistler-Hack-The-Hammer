@@ -4,7 +4,7 @@ import Post from './Post.js';
 import UploadFileButton from './Button.js'
 import JSON from './dummy.json'
 import { Spring } from 'react-spring/renderprops'
-
+import mySvg from '../Whistle.svg'
 
 class Feed extends React.Component {
     constructor(){
@@ -23,9 +23,7 @@ class Feed extends React.Component {
                     to={{ opacity: 1 }}>
                     {props => 
                     <div style={props}>
-                        <div className="title-div">
-                        Our Appliation
-                        </div>
+                        <img src={mySvg} width="300px"/>
                     </div>
                     }
                 </Spring>  
