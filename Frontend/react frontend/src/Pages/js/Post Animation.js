@@ -18,15 +18,37 @@ const Card = (props) => {
     config: config.wobbly
   })
 
+/*
+  const [click, setClick] = useState(false)
+  const clickState = useSpring({
+    transform: click
+      ? 'scale(2)'
+      : 'scale(1)',
+    zIndex: click
+    ? '10'
+    : '1',
+
+    config: config.wobbly
+  })*/
+
+
   return (
     <animated.div
       style={{
 
     
-        ...hoverState
+        ...hoverState,
+        //...clickState
       }}
       onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      onMouseLeave={() => {
+        setHover(false)
+        //setClick(false)
+
+      }}
+      //onClick = {() => {
+      //  setClick(true)
+      //}}
     >
             <div className="post-div">
                 <div className="post-title-div">
