@@ -10,7 +10,7 @@ class Feed extends React.Component {
     constructor(){
         super()
         this.state = {
-            
+            posts: []
         }
     }
 
@@ -44,18 +44,17 @@ class Feed extends React.Component {
                         {JSON.map( (data, index) => {
                             console.log(index)
                             return(
-                                <div key={index}>
-                                    <Spring
+                                <Spring
                                     config = {{delay: 500 + 100*index, tension: 100}}
                                     from={{ opacity: 0 }}
-                                    to={{ opacity: 1 }}>
+                                    to={{ opacity: 1 }}
+                                    key={index}>
                                     {props => 
                                     <div style={props}>
-                                            <Post title={data.title} key={index}></Post>
+                                            <Post title={data.title} key={index} listid={index}></Post>
                                     </div>
                                     }
-                                    </Spring>  
-                                </div>
+                                </Spring>  
 
                             )
                         } )}

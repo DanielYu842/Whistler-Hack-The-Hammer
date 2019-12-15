@@ -11,7 +11,6 @@ const Card = (props) => {
     transform: hover
       ? 'translate3d(0px, -12px, 0px) scale(1.03)'
       : 'translate3d(0px, 0px, 0px) scale(1)',
-      
     /*boxShadow: hover
     ? '-1px 15px 45px 0px rgba(0, 0, 0, 0.3)'
     : '-1px 10px 45px 0px rgba(0, 0, 0, 0.1)',*/
@@ -29,26 +28,17 @@ const Card = (props) => {
     : '1',
 
     config: config.wobbly
-  })*/
-
+  })
+*/
 
   return (
     <animated.div
       style={{
-
-    
-        ...hoverState,
-        //...clickState
+        ...hoverState
       }}
       onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => {
-        setHover(false)
-        //setClick(false)
+      onMouseLeave={() => setHover(false)}
 
-      }}
-      //onClick = {() => {
-      //  setClick(true)
-      //}}
     >
             <div className="post-div">
                 <div className="post-title-div">

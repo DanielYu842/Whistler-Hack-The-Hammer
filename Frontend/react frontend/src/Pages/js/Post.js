@@ -6,16 +6,18 @@ class Post extends React.Component {
     constructor(){
         super()
         this.state = {
-            verified : false
         }
     }
 
 
+    componentDidMount(){
+        console.log(this.props.listid)
+    }
 
     render(){
 
         return(
-            <Card title={this.props.title}></Card>
+            <Card title={this.props.title} listid={this.props.listid}></Card>
         )
     }
 }
