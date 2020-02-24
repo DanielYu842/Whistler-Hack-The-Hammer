@@ -1,3 +1,4 @@
 # Hack-The-Hammer
 
-This is our project that we submited to Hack the Hammer. We won the overall best security hack.
+A decentralized platform for whistle blower complaints on the Etherium Blockchain using the InterPlanetary File System. Hack the Hammer Overall Security Hack Winner. 
+
